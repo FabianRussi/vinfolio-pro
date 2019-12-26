@@ -1,0 +1,3 @@
+define('item_relations_cell.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var template = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return " <li class=\"item-relations-cell\"><div data-type=\"backbone.collection.view.cell\"></div></li>  ";
+},"useData":true}); template.Name = 'item_relations_cell'; return template;});

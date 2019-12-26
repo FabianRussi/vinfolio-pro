@@ -1,0 +1,82 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-tile-container{}
+
+.product-views-option-tile {
+	@extend .clearfix;
+	width: 100%;
+
+
+    [data-validation-error="block"] {
+  		display:table;
+  	
+  	}
+}
+
+.product-views-option-tile-label {
+	text-transform:uppercase;
+	font-weight:$sc-font-weight-bold;
+	margin-bottom:$sc-margin-lv2;
+	display: block;
+
+	span {
+		font-weight:$sc-font-weight-normal;
+	}
+}
+
+.product-views-option-tile-picker {
+	@extend .picker-label;
+	margin-bottom:$sc-margin-lv1;
+}
+.product-views-option-tile-input-picker {
+	@extend .picker-input;
+}
+
+.product-views-option-tile-picker {
+	@extend .picker-lg;
+}
+
+.product-views-option-tile-picker-small {
+	@extend .picker-sm;
+}
+
+
+.product-views-option-tile-picker.active {
+	@extend .picker-checked;
+}
+.product-views-option-tile-picker.muted {
+	opacity:0.4;
+}
+
+.product-views-option-tile-anchor{}
+
+.product-views-option-tile-label-required {
+	@extend .input-required;
+}
+
+.product-details-full-main-right .product-views-option-tile{margin-top: 20px; margin-bottom: 20px;}
+/*.product-details-quickview .product-views-option-tile{margin-top: 20px;margin-bottom: 20px;}
+*/
+.product-views-option-soldby-label.muted{display:none !important}
+
+.product-details-options-selector .sold-by-option .custcol_vf_soldby-controls{display:block}
+.product-views-option-tile-picker.muted{display: none;}
+
+label[data-label="label-custcol_vf_bottlesize"].muted{display:inline-block;}
+.hide-size{display:none !important}
+.custcol_casesize-controls-group .product-views-option-tile-label,.product-details-quantity-options-title,.product-detail-total-span #bottlestext{text-transform:none !important}
+.custcol_casesize-controls-group{padding-right: 20px;position: relative;bottom: 2px;}
+.custcol_casesize-controls-group .product-views-option-tile-label{
+	margin: 10px 6px 0 0 !important;
+}
+.custcol_casesize-controls-group .product-views-option-tile-label,.product-details-quantity-options-title{
+	font-size: 15px !important;
+}
+/*.product-details-quantity-options{width: 110px;}*/
+.case-size-custcol_casesize.product-views-option-tile-picker{line-height: 37px !important;}
+/*.custcol12-controls-group,.custcol12-controls.product-views-option-tile-container{float:right;}*/

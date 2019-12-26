@@ -1,0 +1,103 @@
+{
+    "type": "object"
+,   "subtab": {
+        "id": "ShippingDetails",
+        "title": "Shipping Type Details",
+        "description": "Generic group for extension",
+        "group": "layout"
+    }
+,    "properties": {
+        "Domestic": {
+            "group": "layout"
+        ,   "type": "array"
+        ,   "title": "Domestic shipping"
+        ,   "description": "This option should only be available to shipping addresses in the following states"
+        ,   "items": {
+                "type": "object",
+                "properties": {
+                    "stDS": {
+                        "type": "string",
+                        "title": "State"
+                    },
+                    "code": {
+                        "type": "string",
+                        "title": "State Code"
+                    }
+                }
+            }
+        ,   "default": []
+        }
+    ,   "Third": {
+            "group": "layout"
+        ,   "type": "array"
+        ,   "title": "Third-party carrier"
+        ,   "description": "This option should only be available to shipping addresses in the following states"
+        ,   "items": {
+                "type": "object",
+                "properties": {
+                    "stTP": {
+                        "type": "string",
+                        "title": "State"
+                    },
+                    "code": {
+                        "type": "string",
+                        "title": "State Code"
+                    }
+                }
+            }
+        ,   "default": []
+        }
+    ,   "Local": {
+            "group": "layout"
+        ,   "type": "array"
+        ,   "title": "Local delivery"
+        ,   "description": "Local delivery is available for people shipping to the following cities (in California)"
+        ,   "items": {
+                "type": "object",
+                "type": "string",
+                "title": "City"
+            }
+        ,   "default": []
+        }
+    ,   "International": {
+            "group": "layout"
+        ,   "type": "array"
+        ,   "title": "International"
+        ,   "description": "International delivery is available to the following countries"
+        ,   "items": {
+                "type": "object",
+                "properties": {
+                    "stCC": {
+                        "type": "string",
+                        "title": "Country"
+                    },
+                    "code": {
+                        "type": "string",
+                        "title": "Country Code"
+                    }
+                }
+            }
+        ,   "default": []
+        }
+    ,   "storage": {
+            "group": "layout"
+        ,   "type": "array"
+        ,   "title": "Send to storage/Will Call"
+        ,   "description": "only Send to storage and Will Call are available to below states"
+        ,   "items": {
+                "type": "object",
+                "properties": {
+                    "stSS": {
+                        "type": "string",
+                        "title": "State"
+                    },
+                    "code": {
+                        "type": "string",
+                        "title": "State Code"
+                    }
+                }
+            }
+        ,   "default": []
+        }
+    }
+}

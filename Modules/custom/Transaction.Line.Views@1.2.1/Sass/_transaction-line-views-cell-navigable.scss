@@ -1,0 +1,180 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.transaction-line-views-cell-navigable{
+	@extend .table-flex-item-navigable;
+	margin:$sc-margin-lv2 0;
+}
+
+.transaction-line-views-cell-navigable-item-image{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-image;
+	img{
+		width:100%;
+	}
+}
+
+.transaction-line-views-cell-navigable-details {
+	@extend .table-flex-middle-first;
+	@extend .table-flex-middle-data;
+}
+
+.transaction-line-views-cell-navigable-amount {
+	@extend .table-flex-middle-last;
+	@extend .table-flex-middle-data;
+
+	@media (min-width: $screen-md-min){
+		text-align: right;
+}
+}
+
+.transaction-line-views-cell-navigable-value{
+	@extend .sc-value;
+}
+
+.transaction-line-views-cell-navigable-sku-label {
+	@extend .sc-sku-label;
+}
+.transaction-line-views-cell-navigable-sku-value{
+	@extend .sc-sku-value;
+}
+.transaction-line-views-cell-navigable-product-price-label {
+	@extend .sc-label;
+}
+.transaction-line-views-cell-navigable-product-price-value {
+	@extend .sc-value;
+}
+.transaction-line-views-cell-navigable-item-unit-price {
+	@extend .table-flex-middle-data;
+	@extend .column-type-amount;
+
+	@media (min-width: $screen-md-min){
+		text-align: right;
+	}
+}
+
+.transaction-line-views-cell-navigable-item-unit-price-value {
+	@extend .sc-value;
+}
+
+.transaction-line-views-cell-navigable-item-unit-price-label {
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-reason-label {
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-quantity-label {
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-quantity{
+	@extend .sc-value;
+	@extend .table-flex-middle-data;
+
+	@media (min-width: $screen-md-min){
+		text-align: right;
+	}
+}
+
+.transaction-line-views-cell-navigable-item-totalprice-label{
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-amount-label{
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-amount-value{
+	@extend .middle-price;
+}
+
+.transaction-line-views-cell-navigable-item-old-price{
+	@extend .old-price;
+}
+
+.transaction-line-views-cell-navigable-product-title{
+	@extend .medium-title;
+}
+
+.transaction-line-views-cell-navigable-product-title-anchor{
+	@extend .medium-title-navigable;
+}
+
+.transaction-line-views-cell-navigable-amount{
+	@extend .column-type-amount;
+	@extend .table-flex-middle-data;
+	@extend .table-flex-middle-last;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.transaction-line-views-cell-navigable-item-quantity-label,
+.transaction-line-views-cell-navigable-item-unit-price-label,
+.transaction-line-views-cell-navigable-item-amount-label{
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.transaction-line-views-cell-navigable-header-col-amount {
+	@extend .column-type-amount;
+	display:block;
+}
+
+.transaction-line-views-cell-navigable-product-name{}
+.transaction-line-views-cell-navigable-product-price{}
+.transaction-line-views-cell-navigable-item-quantity-value{
+	@extend .column-type-quantity;
+
+	@media (min-width: $screen-md-min){
+		display:block;
+	}
+}
+.transaction-line-views-cell-navigable-item-reason-value{}
+.transaction-line-views-cell-navigable-stock{}
+.order-wizard-showshipments-module-shipping-details .order-wizard-showshipments-module-shipping-details-items.module-rendered {  width: 100%;}
+.order-wizard-showshipments-module-shipping-details{background: #fff; padding: 0px;}
+
+/*.order-wizard-showshipments-module-shipping-details .transaction-line-views-cell-navigable-product-name {float:left; width:30%; vertical-align: top; }
+.order-wizard-showshipments-module-shipping-details div[data-view="Item.Price"]{float:left; border:solid 1px red;  width:20%; vertical-align: top; }
+.order-wizard-showshipments-module-shipping-details div[data-view="Item.Sku"]{}
+.order-wizard-showshipments-module-shipping-details div [data-view="Item.Options"]{float:left; border:solid 1px green;  width:20%; vertical-align: top; }*/
+
+.order-wizard-showshipments-module-shipping-details .order-wizard-cartitems-module-ship table.lg2sm-first.order-wizard-cartitems-module-ship-table td{display: table-cell; border-bottom: solid 1px #dee0e3;  padding: 10px 5px; }
+.order-wizard-showshipments-module-shipping-details .transaction-line-views-cell-navigable-details{width: 36%;}
+ol.wizard-step-navigation-menu li{position:relative; font-weight:normal; text-transform:uppercase;padding-right: 38px;}
+
+.wizard-step-navigation-active:before{content: "";background: #fff;position: absolute; bottom: -24px; left: -47px;  right: 0px;background-image: url('http://shopping.na2.netsuite.com/core/media/media.nl?id=84648&c=4558614&h=d1ad531a3edabf3d5c31');background-size: 32px 19px;height: 19px;width: 32px;background-repeat: no-repeat; margin: auto;}
+
+section.order-wizard-showpayments-module-details{padding: 0px; background: none; width: 67%;  float: left;}
+.order-wizard-showshipments-module-shipping-details-address{margin-top: -5px;}
+.order-wizard-showshipments-module-shipping-title{float: left;}
+
+.stepped-process-menu, .wizard-step-navigation-menu{max-width: 500px; margin: auto; }
+@media only scree and(max-width:800px){
+	.order-wizard-showpayments-module-details{width: 100%; float: none;}
+}
+
+
+@media only screen and(max-width:600px){
+.order-wizard-showshipments-module-shipping-details .order-wizard-cartitems-module-ship table.lg2sm-first.order-wizard-cartitems-module-ship-table td{display:block; border-bottom: solid 0px #dee0e3; }
+.order-wizard-showshipments-module-shipping-details .transaction-line-views-cell-navigable-details{width:100%;
+    padding: 0px 5px;}
+}
+
+
+
+
+
+
+
+
+
+
+

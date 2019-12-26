@@ -1,0 +1,305 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-shipmethod-module{
+	@extend .box-column;
+}
+
+.order-wizard-shipmethod-module-title{
+	margin-bottom: $sc-margin-lv4;
+	margin-top: $sc-margin-lv4;
+	font-weight: bold;
+}
+
+.order-wizard-shipmethod-module-message{
+	@extend .message-warning;
+}
+
+.order-wizard-shipmethod-module-option-select{
+	@extend .input-large;
+}
+
+.order-wizard-shipmethod-module-option{
+	color: $sc-color-copy;
+	display: block;
+	padding: $sc-padding-lv5;
+	margin-bottom: $sc-margin-lv2;
+	border: 1px solid $sc-color-theme-border;
+	cursor: pointer;
+}
+
+.order-wizard-shipmethod-module-option-active {
+	background-color: $sc-neutral-shade-0;
+}
+
+.order-wizard-shipmethod-module-checkbox{
+	margin-right: $sc-margin-lv2;
+}
+
+.order-wizard-shipmethod-module-option-price{
+	float: right;
+}
+
+.order-wizard-msr-shipmethod-module-message{
+	@extend .message-warning;
+}
+
+.order-wizard-msr-shipmethod-package-message-icon{
+	@extend .icon-base;
+	@extend %fa-exclamation-triangle;
+}
+
+.order-wizard-shipmethod-module-option-name{}
+
+.order-wizard-shipmethod-module-webship-date { /*max-width: 300px;*/width: 83%; }
+.order-wizard-shipmethod-module-webship-date-label { text-transform: capitalize; margin-bottom: 10px; margin-top: 7px; font-weight: bold; font-family: "Gotham-Medium" !important;}
+.thin{font-family: "Gotham-Medium"; font-weight: 200;}
+.order-wizard-shipmethod-module-willcalllocation-label {font-family: "Gotham-Medium" !important; text-transform: capitalize; margin-bottom: 10px; margin-top: 25px; font-weight: bold;}
+.order-wizard-shipmethod-module-willcalllocation { min-width: 300px; }
+.order-wizard-shipmethod-module-show { display: block; }
+.order-wizard-shipmethod-module-hide { display: none; }
+
+.order-wizard-shipmethod-module-weather-hold p , .order-wizard-shipmethod-module-weather-hold-d-option p , .order-wizard-shipmethod-module-weather-hold-d-option-sec p , .order-wizard-shipmethod-module-weather-hold-3rd-party p{ color: red !important; }
+.order-wizard-shipmethod-module-weather-hold .order-wizard-shipmethod-module-link-icon, .order-wizard-shipmethod-module-weather-hold-d-option .order-wizard-shipmethod-module-link-icon { cursor:pointer; color: #1b9dbf; font: 12px/1 FontAwesome; }
+.order-wizard-shipmethod-module-overrideweatherhold-label { cursor: pointer; display: inline !important;position: relative;bottom:3px; }
+.order-wizard-shipmethod-module-record-in-vincellar { display: block;  padding: 10px 10px 10px 0px;  margin-bottom: 10px; }
+.order-wizard-shipmethod-module-record-in-vincellar input[type="checkbox"] {margin-right: 0px !important;}
+.order-wizard-shipmethod-module-vincellar .row{margin:0px;}
+.order-wizard-shipmethod-module-weather-hold .tooltip-inner , .order-wizard-shipmethod-module-weather-hold-d-option .tooltip-inner , .order-wizard-shipmethod-module-weather-hold-d-option-sec .tooltip-inner{max-width:500px!important;}
+.order-wizard-shipmethod-module-giftnotes textarea{width:100%;}
+.order-wizard-shipmethod-module-vincellar .col-md-12{padding-left:0px;}
+
+
+@media (max-width: $screen-xs-max) {
+.order-wizard-cart-summary-title{margin-top:0px;}
+.order-wizard-address-module-show-addresses-container{padding:0px 15px;}
+.wizard-step-navigation-active:before{bottom:-24px;}
+.wizard-step-navigation-menu{width:100%; display:contents; text-align:center; }
+.order-wizard-shipmethod-module-willcalllocation{width:100%;}
+.wizard-step-navigation{ text-align:center;}
+.order-wizard-shipmethod-module-shipping-type label {display: inline; line-height: 30px;}
+.address-edit select#in-modal-country {width: 100%;}
+.address-edit input[type="text"]{width: 100%;}
+.order-wizard-paymentmethod-selector-module{padding: 0px 15px;}
+.order-wizard-showshipments-module-shipping-details{padding: 0px 15px; clear: both; margin: auto; }
+select.order-wizard-paymentmethod-selector-module-options{width:100%;}
+.checkout-layout-content{padding-bottom: 0px !important;}
+.wizard-step-navigation-back{cursor: pointer; display:block;  text-align:right;  margin-bottom:10px;}
+section.order-wizard-showpayments-module-details{padding:0px; background:none; width:100%; float:none;  margin:auto;}
+.order-wizard-showshipments-module-shipping-details-address{margin-bottom:20px; margin-top:10px; clear:both;  width: 100%; margin:auto;}
+.order-wizard-showshipments-module-shipping-title{float:none;  padding-top:20px;}
+	
+.order-wizard-shipmethod-module-webship-date{max-width: none;}	
+.order-wizard-shipmethod-module-vincellar .col-md-12{padding-right:0px;}
+
+}
+.ship-method-mgs ,.ship-method-mgs-sec{    font-size: 11px;}
+.ship-method-mgs-div-class , .ship-method-mgs-div-class-sec{padding-top: 57px;}
+.ship-pick-up-mgs , .ship-pick-up-mgs-party{ font-size: 11px; }
+.ship-pick-up-mgs-div-class{    padding-top: 30px;}
+/*.order-wizard-shipmethod-module-custom-fields{    margin-top: -30px;}*/
+#order-wizard-shipmethod-module-shipping-message { padding-bottom: 20px; }
+.order-wizard-shipping-season{    padding-left: 15px;     padding-bottom: 20px;}
+.ship-pick-up-mgs-div-class-party {padding-top: 42px;}
+.order-wizard-shipmethod-module-weather-hold-3rd-party {    padding-top: 40px;}
+.for_will_call{margin-top: 4px !important;}
+.saparation_border{
+	width: 96%;
+    height: 53px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-top: -16px;
+}
+.saparation_border_update{
+	width: 96%;
+	border-top: 1px solid #e6e6e6;
+	padding-top: 13px;
+}
+.non-domestic-expected-delivery-show{    margin-bottom: -62px;}
+.div_line_css{padding-top: 12px;     padding-bottom: 8px;}
+.saparation_border_sec{
+	width: 96%;
+    height: 179px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: -20px;
+}
+.div_line_css_gift{padding-bottom: 12px;}
+#custbody_remove_from_vincellar:disabled{color: #e6e6e6 !important;}
+
+.gift_notes_label,.record-in-vincellar-label,.confirmation-chk-container,.transit-insurance-radio-label1,.transit-insurance-radio-label2,.willcall-pickup-radio-label1,.willcall-pickup-radio-label2,.shipping-option-radio-label1,.shipping-option-radio-label2{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*checkboxes*/
+.gift_notes_label input,.record-in-vincellar-label input,.confirmation-chk-container input{
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/*radio buttons*/
+.transit-insurance-radio-label1 input,.transit-insurance-radio-label2 input,.willcall-pickup-radio-label1 input,.willcall-pickup-radio-label2 input,.shipping-option-radio-label1 input,.shipping-option-radio-label2 input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/*checkboxes*/
+.transit_insurance_checkmark,.record-in-vincellar_checkmark,.gift_notes_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: white;
+  border:1px solid #7c6d3f;
+}
+/*radio buttons*/
+.transit-insurance-radio1-checkmark,.transit-insurance-radio2-checkmark,.willcall-pickup-radio1-checkmark,.willcall-pickup-radio2-checkmark,.shipping-option-radio1-checkmark,.shipping-option-radio2-checkmark{
+	position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+/*checkboxes*/
+.confirmation-chk-container input:checked ~ .transit_insurance_checkmark,.record-in-vincellar-label input:checked ~ .record-in-vincellar_checkmark,.gift_notes_label input:checked ~ .gift_notes_checkmark{
+  background-color:#7c6d3f;
+}
+
+/*radio buttons*/
+.transit-insurance-radio-label1 input:checked ~ .transit-insurance-radio1-checkmark,.transit-insurance-radio-label2 input:checked ~ .transit-insurance-radio2-checkmark,.willcall-pickup-radio-label1 input:checked ~ .willcall-pickup-radio1-checkmark,.willcall-pickup-radio-label2 input:checked ~ .willcall-pickup-radio2-checkmark,.shipping-option-radio-label1 input:checked ~ .shipping-option-radio1-checkmark,.shipping-option-radio-label2 input:checked ~ .shipping-option-radio2-checkmark{
+background-color:#eee;
+}
+
+.gift_notes_label input:checked ~ .gift_notes_checkmark:after,.record-in-vincellar-label input:checked ~ .record-in-vincellar_checkmark:after,.confirmation-chk-container input:checked ~ .transit_insurance_checkmark:after, .transit-insurance-radio-label1 input:checked ~ .transit-insurance-radio1-checkmark:after, .transit-insurance-radio-label2 input:checked ~ .transit-insurance-radio2-checkmark:after, .willcall-pickup-radio-label1 input:checked ~ .willcall-pickup-radio1-checkmark:after, .willcall-pickup-radio-label2 input:checked ~ .willcall-pickup-radio2-checkmark:after, .shipping-option-radio-label1 input:checked ~ .shipping-option-radio1-checkmark:after, .shipping-option-radio-label2 input:checked ~ .shipping-option-radio2-checkmark:after{
+  display: block;
+}
+
+.gift_notes_checkmark:after,.record-in-vincellar_checkmark:after,.transit_insurance_checkmark:after,.transit-insurance-radio1-checkmark:after,.transit-insurance-radio2-checkmark:after,.willcall-pickup-radio1-checkmark:after,.willcall-pickup-radio2-checkmark:after,.shipping-option-radio1-checkmark:after,.shipping-option-radio2-checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+/*radio buttons*/
+span.radio-switch:after{
+  content: "";
+  position: absolute;
+  top: 20%;
+	left: 20%;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #7c6d3f;
+
+}
+/*checkboxes*/
+span.transit_insurance_checkmark:after,span.record-in-vincellar_checkmark:after ,span.gift_notes_checkmark:after {
+  position: absolute;
+  left: 27%;
+  top: 10%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+}
+.shipping-options, .order-wizard-shipmethod-module-willcalllocation {
+    margin-left: 10px;
+}
+
+
+/* The container */
+.shipping-option {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.shipping-option input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.shipping-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+/*.shipping-option:hover input ~ .shipping-checkmark {
+  background-color: #ccc;
+}
+*/
+/* When the radio button is checked, add a blue background */
+.shipping-option input:checked ~ .shipping-checkmark {
+  background-color:#eee;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.shipping-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.shipping-option input:checked ~ .shipping-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.shipping-option .shipping-checkmark:after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7c6d3f;
+}
+
+@media (min-width: 992px)
+{
+.order-wizard-address-module-single .address-details
+{
+  width: 40% !important;
+} 
+}
+
+#custbody_vf_shippingtypeonso{float: left;
+    width: 40%;}
+
+.shipping-options-msg{display:none;background-color: #d0ebf6;margin-left: 3%;}
+.shipping-options-msg p{font-size: 13px;padding: 8px;}
+
+h5.web-shipping-type{font-family: "Gotham-Medium" !important;font-size: 1.2rem !important;letter-spacing: 1.2px;}

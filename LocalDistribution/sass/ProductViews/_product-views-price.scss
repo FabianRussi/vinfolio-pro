@@ -1,0 +1,64 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-price-lead{
+	@extend .middle-price;
+}
+
+.product-views-price-old{
+	@extend .old-price;
+}
+
+.product-views-price-login-to-see-prices-highlighted {
+	margin-top: $sc-margin-lv2;
+    margin-bottom: $sc-margin-lv2;
+}
+.product-views-price-login-to-see-prices {
+    @extend .message;
+}
+
+.product-views-price-message {
+	font-weight: normal;
+}
+
+.product-views-price{}
+.product-views-price-range{}
+.product-views-price-exact{}
+
+.sale-price{
+	text-decoration: line-through;
+	font-size: 0.93rem;
+}
+.actual-price,.sale-price-value{
+	color:red
+}
+.actual-price-value{
+	text-decoration: line-through;
+	font-weight:normal !important;
+	font-size: 18px !important;
+}
+
+.on-sale-tag{
+	background-color: red;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 10px;
+    margin-left: -5px;
+   margin-bottom: -20px;
+   margin-top: 20px;
+   width: 100%;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.product-views-sale-price{
+text-decoration: line-through;
+font-size: 14px !important;	
+}

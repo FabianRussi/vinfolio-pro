@@ -1,0 +1,112 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.myaccount-layout {
+	@extend %sc-layout;
+}
+
+.myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+	@extend .container;
+}
+
+.myaccount-layout-header {
+  margin-bottom: $sc-margin-lv5;
+}
+
+.myaccount-layout-row{
+	@extend .row;
+}
+
+.myaccount-layout-main{
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom:10px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	margin-bottom: $sc-margin-lv4;
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+
+	@extend .col-sm-3;
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		display: none;
+	}
+
+	.myaccount-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+.myaccount-layout-breadcrumb{}
+.myaccount-layout-error-placeholder{}
+
+.myaccount-layout-title{display: block; color: #2b2730;font-weight: normal;font-size: 32px;padding-bottom: 10px; font-family: 'BaskervilleClassico'; letter-spacing: 2px; border-bottom: solid 1px #e6e6e6; text-align: center;}
+.myaccount-wishlist .row{ padding: 10px 0px; border-bottom: solid 1px #e5e5e5;  }
+.myacc-wishlist-mltext, .myacc-wishlist-soldout, .myacc-wishlist-info{display: block; padding:10px 0px;}
+.myacc-wishlist-soldout{color:#ab2244; font-weight: bold; padding-top:10px; }
+.myaccount-wishlist h3{font-family: 'BaskervilleClassico'; font-weight: normal; }
+.myaccount-source-tag{ margin-top:-35%; position: absolute; }
+.myaccount-source-tag .item-list-vinfolio-tag{color:#fff; font-size: 12px; width: 100px; background:#14253d;  padding: 4px 10px; display: block; margin-bottom: 5px; }
+.myaccount-source-tag .item-list-collection-tag{color:#fff; font-size: 12px; background:#4c1715; width:100px; padding: 4px 10px; display: block; }
+.myaccount-source-tagmain{position:relative; width:175px;}
+.header-menu-profile{position: relative;}
+.header-profile-menu-myaccount-container{width: 250px !important;}
+.header-profile-menu-myaccount-container > li{width: 100%;}
+.myaccount-layout-container input[type="checkbox"]{background-color: #fff; -webkit-appearance: none; width:17px; height:17px; border:solid 1px #dfe1e5;}
+.myaccount-layout-container input:checked{background:url("../img/input-checked-myacc.jpg") no-repeat;}
+
+.address-list .address-details{border: solid 1px #e3e6e8;}
+.address-list .address-details:hover{border: solid 1px #98803c;}
+.product-list-display-full-actions .product-views-price span{font-size: 18px !important;}
+.overview-home-orders-title, .order-history-list-header, .return-authorization-list-header, .reorder-items-list-hedaer,
+ .quote-list-header, .product-list-lists-header, .list-header-view, .transaction-history-list-header, .product-list-details-header{border-top:0px !important; padding-top: 0px !important; }
+.myaccount-layout-main .product-list-details-header .list-header-view-select-all{display:none;}
+.menu-tree-node-item-anchor.active{color:$sc-color-primary !important; }
+.creditcard-header-icon{height: auto !important}
+.balance-indicator-bar{background-color: whitesmoke !important;}
+@media (max-width: $screen-xs-max){
+	.myaccount-wishlist .row > div {padding-bottom: 10px;  }
+	.myaccount-source-tagmain{width:100px;}
+}
+
+

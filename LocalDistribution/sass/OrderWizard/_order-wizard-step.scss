@@ -1,0 +1,88 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-step-header{
+	@extend .wizard-step-header;
+}
+
+.order-wizard-step-review-wrapper,
+.order-wizard-step-content-wrapper{
+	@extend .row;
+}
+
+.order-wizard-step-review-main,
+.order-wizard-step-content-main{
+	@extend .col-xs-12;
+	@extend .col-sm-7;
+	@extend .col-md-9;
+}
+
+.order-wizard-step-review-secondary,
+.order-wizard-step-content-secondary{
+	@extend .col-xs-12;
+	@extend .col-sm-5;
+	@extend .col-md-3;
+	float: right;
+}
+
+.order-wizard-step-content-secondary{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.order-wizard-step-actions{
+	@extend .col-xs-12;
+	@extend .col-sm-7;
+	@extend .col-md-9;
+}
+
+.order-wizard-step-message{
+	@extend .wizard-step-message;
+
+	margin-bottom:10px!important;
+	line-height:25px;
+}
+
+.order-wizard-step-button-container{
+	@extend .wizard-step-button-container !optional;
+	margin-bottom: 15px !important;
+}
+
+.order-wizard-step-button-continue {
+	@extend .wizard-step-button-continue;
+	margin-bottom: $sc-margin-lv2;
+}
+.will_continueBtn{
+	float: none !important;
+	border-radius: 1px !important;
+	text-transform: uppercase;
+}
+.store_styles{
+	margin-top: -7% !important;
+}
+
+.order-wizard-step-button-back{
+	@extend .wizard-step-button-back;
+}
+
+.order-wizard-step-guest-message{}
+.order-wizard-step-title{}
+.third-party-message{
+	color: red !important;
+}
+.pad_text{    padding-top: 10px;}
+.pad_text_bot{padding-bottom: 10px;}
+
+.order-wizard-address-module-title,.web-shipping-type,.order-wizard-shipmethod-module-willcalllocation-label,.order-wizard-shipmethod-module-willcalllocation-label,.for_will_call,.order-wizard-shipmethod-module-webship-date-label,.order-wizard-shipmethod-module-webship-date-label{color:#222426 !important;}
+.custbody_record_in_vincellar,.record_in_gift{
+	background-color: #fff;
+    width: 17px !important;
+    height: 17px;
+    border: solid 1px #dfe1e5;
+}
+
+ol.wizard-step-navigation-menu{margin-left: 20% !important;}
+.order-wizard-shipmethod-module-giftnotes label.order-wizard-shipmethod-module-webship-date-label{position: relative;bottom: 3px;}

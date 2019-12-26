@@ -1,0 +1,159 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-item-cell-table {
+	@extend .item-cell;
+
+	.global-views-star-rating {
+		float:none;
+	}
+
+	.product-details-option-color {
+		text-align:center;
+	}
+
+	.product-details-facets-option-color {
+		text-align:center;
+	}
+
+	.cart-quickaddtocart-price {
+		text-align:left;
+		margin-bottom:$sc-margin-lv2;
+	}
+
+	.cart-quickaddtocart {
+		display: flex;
+	}
+
+	.cart-add-to-cart-button-container {
+		width:100%;
+		padding:0px;
+	}
+
+	.product-views-option-facets-color {
+		text-align:center;
+	}
+}
+
+.facets-item-cell-table-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-table-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-table-image-wrapper {
+	position:relative;
+	text-align:center;
+
+	@media (min-width: $screen-xs-min)
+	{
+		width: 50%;
+		float: left;
+		padding: 0px;
+	}
+}
+
+.facets-item-cell-table-content-wrapper {
+	@media (min-width: $screen-xs-min)
+	{
+		width: 50%;
+		float: left;
+		display: block;
+		padding-left: $sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-table-link-image {}
+
+.facets-item-cell-table-quick-view-icon {}
+
+.facets-item-cell-table-add-to-cart-itemid {}
+
+.facets-item-cell-table-stock {
+	text-align:left;
+}
+
+.facets-item-cell-table-details {
+	text-align:left;
+}
+
+.facets-item-cell-table-image {
+	width:100%;
+	height:auto;
+}
+
+.facets-item-cell-table-title {
+	@extend .item-cell-title;
+}
+
+.facets-item-cell-table-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+
+	.product-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-table-rating {
+	text-align:left;
+}
+
+.facets-item-cell-table {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+	.global-views-star-rating-container {
+		width:auto;
+		display:table;
+	}
+}
+
+.facets-item-cell-table-add-to-cart-quantity {
+	@extend .input-medium;
+}
+
+.facets-item-cell-table-add-to-cart-button {
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.facets-item-cell-table-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-table-left-num li{display: inline-block; padding-right:3px; }
+.facets-item-cell-table-left-num span{width:20px; height:20px; background:$sc-color-primary; color:#fff; padding:5px; font-size: 11px;  border-radius:100%;}
+.facets-item-cell-table-left-num{padding: 14px 0px;}
+.facets-item-cell-table-left-var li {padding-bottom: 7px;}
+.facets-item-cell-table-left-var li{display: inline-block; width: auto; padding-right: 20px; }
+
+#facet-browse .facets-items-collection-view-cell-span6 .facets-item-cell-table-image-wrapper{height: 220px;overflow: hidden;}
+#facet-browse .facets-items-collection-view-cell-span12 .facets-item-cell-list-image-wrapper{height: 220px;width:220px; overflow: hidden;}
+#facet-browse .facets-items-collection-view-cell-span6 .facets-item-cell-table-image, #facet-browse .facets-items-collection-view-cell-span12 .facets-item-cell-list-image-wrapper .facets-item-cell-list-image  {width: auto; height: 100%;}
+
+@media (min-width: 480px){
+#facet-browse .facets-items-collection-view-cell-span6 .facets-item-cell-table-image-wrapper{height: 220px;overflow: hidden;}
+#facet-browse .facets-items-collection-view-cell-span12 .facets-item-cell-list-image-wrapper{height: 220px;width:220px; overflow: hidden;}
+#facet-browse .facets-items-collection-view-cell-span6 .facets-item-cell-table-image, #facet-browse .facets-items-collection-view-cell-span12 .facets-item-cell-list-image-wrapper .facets-item-cell-list-image  {width: auto; height: 100%;}
+}
+
+
+@media (max-width: $screen-sm-max) { 
+.facets-item-cell-table-image-wrapper{width: 100%; float: none; padding:0px;}
+.facets-item-cell-table-content-wrapper{width: 100%; float: none; padding:0px;}
+}
+
+@media (max-width: $screen-xs-max) { 
+.facets-item-cell-table-left-num li{padding-bottom: 10px;}
+}
+.product-views-price-lead{
+	color: #2e2b33 !important;
+    font-size: 18px;
+}

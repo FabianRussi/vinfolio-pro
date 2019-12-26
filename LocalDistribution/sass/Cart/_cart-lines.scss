@@ -1,0 +1,193 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-lines-name{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-name-link{
+	@extend .medium-title-navigable;
+}
+
+.cart-lines-name-viewonly{
+	@extend .medium-title-viewonly;
+}
+
+.cart-lines-thumbnail{
+	img{
+		width:$img-large;
+	}
+}
+
+.cart-lines-price{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-price .transaction-line-views-price-lead{
+	@extend .middle-price;
+}
+
+.cart-lines-options{
+	.cart-option{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.cart-lines-row {
+	@media (max-width: $screen-md-max) {
+		display: table-cell;
+		width: 100%;
+		float: left;
+		clear: both;
+
+		td {
+
+		}
+
+		td.cart-lines-table-first {
+			padding-left: 0;
+
+		}
+
+		td.cart-lines-table-middle {
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+		}
+
+		td.cart-lines-table-last {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.cart-lines-table-first {
+	@extend .table-flex-tdfirst;
+	width: 20%;
+}
+
+.cart-lines-table-middle {
+	@extend .table-flex-middle;
+	padding-left: 0;
+}
+
+.cart-lines-table-last {
+	 @extend .table-flex-tdlast;
+	 vertical-align:top;
+	 padding-left: 0;
+}
+
+.cart-lines-alert-placeholder {
+	margin:$sc-margin-lv2 0;
+}
+
+.cart-lines-shipping-method {
+	margin-top: $sc-margin-lv3;
+}
+
+.cart-lines-item-actions-desktop {
+
+
+	@media (min-width: $screen-md-min) {
+	 width: auto;
+    float: right;
+    margin-right: 127px;
+    font-weight: bold;
+    font-size: 14px;
+
+	}
+}
+
+.cart-lines-item-actions-mobile {
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}
+
+.cart-lines-stock{}
+.cart-lines-summary{}
+
+
+.cart-detailed-item-view-cell-actionable-table .cart-lines-row {border-bottom: solid 1px #dee0e3;}
+.cart-item-actions-links{margin:auto;}
+.cart-detailed-item-view-cell-actionable-table .cart-lines-options {margin-top:-4px;}
+.cart-detailed-item-view-cell-actionable-table .cart-item-actions-links a{color: #000; white-space: nowrap; }
+.cartsummarycase span{border: solid 1px #737b87; padding: 5px 10px; border-radius: 5px; margin: 0px 5px; }
+.cartsummarycase {width:100%; line-height: 30px; text-align: center; }
+.cart-item-actions-item-list-actionable-edit-button-edit{ background:url(../img/edit-icon.png) no-repeat 0px; }
+.cart-item-actions-item-list-actionable-edit-content-saveforlater{ background:url(../img/save-later.png) no-repeat 0px; }
+.cart-item-actions-item-list-actionable-edit-content-remove{ background:url(../img/cart-remove.png) no-repeat 0px; }
+.cart-item-actions-links a {display: table-cell; height: 44px; vertical-align: middle; padding-right: 10px;  padding-left: 22px;}
+.cart-item-actions-links a:hover{color:#1b9dbf;}
+.cart-lines-qty-amount .cart-item-summary-item-list-actionable-amount{display: none;}
+
+.cart-lines-thumbnail img{}
+.cart-lines-table-middle .cart-lines-thumbnail img{width:auto;height:100px;}
+
+.cart-lines-name a{font-size: 20px; font-family: 'BaskervilleClassico'; font-weight: normal; }
+span.transaction-line-views-price-lead,.cart-item-summary-amount-value{color: #000!important; font-weight: bold; font-size: 16px!important; }
+.cart-item-summary-item-list-actionable-input-qty input[type="number"]{width: 125px;}
+.cart-item-summary-item-list-actionable-label-qty{position:absolute; margin-left:7px; margin-top:11px !important;}
+.price-text-right{text-align: right;}
+
+div[data-view="Cart.Summary"]{border: 1px solid #e6e6e6; padding: 10px;}
+.cart-item-summary-quantity-title-help{text-align: center;}
+.cart-summary-zip-code{width: 100%;}
+.cart-detailed-left .row{margin: 0px !important;}
+.cart-lines-table-middle{padding: 10px 5px !important;}
+
+.recently-viewed-items .recently-viewed-cell-item{padding: 10px; width:226px!important; }
+.recently-viewed-items .recently-viewed-cell-item img{max-height: 150px; }
+.recently-viewed-items .item-relations-related-item-thumbnail{min-height: 150px !important;}
+.product-list-details-later-macro-qty .product-list-details-later-macro-qty-input{border: solid 1px #ccc;}
+.products-detail-later-cell .transaction-line-views-options-selected-content{padding-bottom:0px !important;}
+.products-detail-later-cell .product-list-details-later-macro-name {min-height: 50px;}
+
+@media (max-width: $screen-md-max){
+	.cart-item-summary-item-list-actionable-input-qty input[type="number"]{width: 70px;}
+}
+
+@media (max-width: $screen-sm-max){
+	.cart-lines-price-main,.cart-lines-summary-amount{display: none !important;}
+	.cart-detailed-item-view-cell-actionable-table .cart-lines-summary > div{display:block;}
+	.cart-lines-table-middle br{display: none;}
+	.cart-detail-heading-main{display: none;}
+	.cart-item-summary-item-list-actionable-label-qty{position: static; margin: 0px; padding-bottom: 10px; }
+	.price-text-right{text-align: left;}
+	.mobile-hide{display: none;}
+	.cart-lines-name{margin-top: 10px;}
+}
+
+@media (max-width: $screen-xs-max) {
+	.cart-detailed-item-view-cell-actionable-table .cart-lines-row{border-bottom: 0px;}
+	td.cart-lines-table-last {padding: 0px !important;}
+	.cartsummarycase{width: auto;}
+	.cart-item-actions-links a{padding-right: 10px;}
+	.recently-viewed-items .recently-viewed-cell-item{padding: 10px; width:169px!important; }
+
+}
+
+.cart-clear{clear:both;}
+.cart-livex-error{
+	background: #d0ecf6;
+  padding: 10px 0px;
+	text-align:center;
+	position: relative;
+}
+.cart-livex-error p{float:left;margin-left: 15%;}
+.cart-livex-error a{
+	padding: 5px 20px;
+	font-weight: 400;
+    background: white;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 6px;}
+.cart-livexborder{
+	border: 5px solid #d0ecf6;
+}

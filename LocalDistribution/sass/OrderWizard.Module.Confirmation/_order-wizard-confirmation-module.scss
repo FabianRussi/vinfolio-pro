@@ -1,0 +1,54 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-confirmation-module {
+	display: block;
+	padding: 35px;
+	background: $sc-color-success-background;
+	border: 1px solid $sc-color-success-border;
+	border-radius: $sc-border-radius;
+	margin-bottom: $sc-margin-lv6;
+}
+.order-wizard-confirmation-module-title {
+	color: $sc-color-success;
+	margin: 0 0 10px;
+}
+.order-wizard-confirmation-module-body {
+	color: $sc-color-success;
+}
+.order-wizard-confirmation-module-continue {
+	@extend .button-large;
+	@extend .button-secondary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+	margin-right: $sc-margin-lv4;
+}
+
+.order-wizard-confirmation-module-download-pdf {
+	@extend .button-large;
+	@extend .button-tertiary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+}
+
+.order-summary-thankyou{max-width: 700px; margin: auto;}
+.thankyou-img img{width:100%;}
+.order-summary-thankyoutitle{padding: 20px 0px;}
+.order-summary-thankyou-containerv1{border: solid 1px #f0efed; padding: 10px; margin: 0px;}
+.order-summary-thankyou-containerv1 .col-sm-4:nth-child(2){border-left: solid 1px #f0efed; border-right: solid 1px #f0efed;}
+.order-summary-thankyou-containerv1.align-center p{min-height: 122px;}
+.order-summary-thankyou-containerv2 .col-sm-4:nth-child(2){border-left: solid 1px #f0efed; border-right: solid 1px #f0efed;}
+.order-summary-thankyou-containerv1 a{color: #98813d;}
+.order-summary-thankyou-containerv2 a{color: #000000;}
+.order-summary-thankyou-containerv2 .col-sm-4, .order-summary-thankyou-containerv1 .col-sm-4{padding:10px 10px;}
+
+@media screen and (max-width: 600px) {
+	.order-summary-thankyou-containerv1 .col-sm-4:nth-child(2){border-left: solid 0px #f0efed; border-right: solid 0px #f0efed;}
+	.order-summary-thankyou-containerv2 .col-sm-4:nth-child(2){border-left: solid 0px #f0efed; border-right: solid 0px #f0efed;}
+	.order-summary-thankyou-containerv1.align-center p{min-height:20px;}
+	.order-summary-thankyoutitle{padding: 10px 0px;}
+}	

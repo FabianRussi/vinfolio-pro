@@ -1,0 +1,115 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-details-quickview {
+	@extend .row;
+
+	.product-details-image-gallery-container {
+		height:380px;
+	}
+
+	.product-details-image-gallery-detailed-image {
+		height:380px;
+	}
+}
+.product-details-quickview-img {
+	@extend .col-sm-5;
+	margin-bottom: $sc-margin-lv3;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 0;
+	}
+
+	.product-details-image-gallery-container {
+		display: inline-block;
+		height: 340px;
+	}
+}
+.product-details-quickview-details {
+	@extend .col-sm-7;
+
+	.item-view-stock-msg {
+		display: table;
+	}
+}
+.product-details-quickview-full-details {
+	margin: $sc-margin-lv1 0 $sc-margin-lv3;
+	display: block;
+}
+
+.product-details-quickview-actions {
+	margin: 0;
+}
+
+.product-details-quickview-actions-container-add-to-cart {
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.product-details-quickview-actions-container-add-to-wishlist,
+.product-details-quickview-actions-container-add-to-quote {
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.product-details-quickview-actions-container {
+	@extend .row;
+}
+
+.product-details-quickview-main {
+	.product-views-price-lead {
+		@extend .large-price;
+		color: $sc-color-primary;
+	}
+	.product-views-price-old {
+		font-size:$sc-font-size-m;
+	}
+}
+
+
+.product-details-quickview-item-name{}
+.product-details-quickview-options{}
+.product-details-quickview-main{}
+.product-details-quickview-info{}
+.product-details-quickview-banner-summary-bottom{}
+.product-details-quickview-main-bottom-banner{}
+.product-details-quickview-banner-details-bottom{}
+
+/*added by itpl*/
+.product-details-quickview .product-details-quickview-actions-container-add-to-wishlist{z-index: 999;  position: absolute; margin-top:0px;}
+.product-details-quickview-item-name{font-size: 32px; font-family:'BaskervilleClassico'; font-weight: normal;    color: #4c1715;}
+.product-details-quickview .product-details-quickview-item-name{font-size: 28px; padding-bottom: 10px;}
+.product-details-quickview .product-details-quickview-country-name{font-size: 14px; color:#e03b34; padding-bottom:20px;}
+.product-details-quickview-full-main{text-align: center; font-size: 14px; line-height: 25px; }
+.product-details-quickview-full-text{text-align: left;}
+.product-details-quickview .product-details-full-main-left-var li{padding-bottom:5px; line-height:23px; }
+.product-details-quickview .sold-by-option{margin-top:0px; clear: both; }
+.product-detail-quickview-border-wrap{border: solid 1px #dfe1e5; background: #fff;  padding: 10px; clear: both; overflow: hidden; }
+.product-details-quickview .product-detail-quickview-price{width: auto; float: left;}
+.product-details-quickview #in-modal-custcol8-container{margin-bottom: -25px!important;}
+.product-details-quickview .productdetail-ship-in-hour{padding-left: 0px;}
+.product-details-quickview .product-details-quickview-actions{margin: 0; width: 310px;  float: right}
+.product-details-quickview  .cart-add-to-cart-button-container{width: 100%; }
+.product-detail-quickview-casesize { display: inline-block; vertical-align: top;/* text-align:right;*/ }
+.product-details-quickview .product-list-control-button-wishlist{font-size: 0px !important;}
+.product-details-quickview .social-sharing-flyout-hover-icons{display:none;}
+.product-detail-quickview-total-price{width:auto; float:left; padding-top:15px;padding-left: 20px;}
+.product-details-quickview-details .facet-country-list{color: #e03b34; font-size: 12px; padding: 0px; padding-bottom: 10px;}
+.product-details-quickview{margin-top: -20px !important;}
+
+
+.product-details-quickview #in-modal-custcol_vf_bottlesize-container{width:auto; float:right;  margin-right:4px;}
+
+.product-details-quickview-details .product-details-full-main-custom-outofstock { position: absolute; margin-top: 5px; border-radius: 0px; font-size: 13px; display: inline-block; white-space: nowrap; color: #e23200; background-color: #fdf0f2; border: 1px solid #f1ced1; padding: 10px; text-transform: uppercase; font-weight: 600;}
+
+.right-aligned{text-align: right; margin-bottom: 10px}
+
+.product-detail-quickview-casesize.casesize{margin-top: 4%;} 
+
+.product-details-quickview-actions-container{width: 210px;
+    float: right;
+    margin-right: 1%;}

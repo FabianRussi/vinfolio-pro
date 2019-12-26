@@ -1,0 +1,272 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+footer {
+    background: url(../img/footerbg.jpg) repeat-x #edebe9 top;
+	margin-top: 20px;
+}
+.footer-content{
+    @extend .container;
+    @extend .row;
+    margin: auto;
+}
+.footer-content-nav {
+    @extend .col-md-8;
+    @extend .col-xs-12;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-content-nav-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: $sc-padding-lv6 0 0;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $sc-padding-lv5;
+    }
+
+    @media (min-width: $screen-md-min) {
+        text-align: left;
+    }
+}
+.footer-content-nav-list > li {
+    display: inline-block;
+    margin-right: $sc-margin-lv2;
+    font-weight: 300;
+}
+
+.footer-content-right {
+    @extend .col-md-4;
+    @extend .col-xs-12;
+    text-align:center;
+    font-size: $sc-font-size-m;
+    color: $sc-color-theme-400;
+    padding: $sc-padding-lv3 0;
+
+    @media (min-width: $screen-md-min) {
+        text-align: right;
+        padding-top: $sc-padding-lv5;
+        padding-bottom: $sc-padding-lv5;
+        float: right;
+    }
+}
+
+.footer-content-copyright {
+    display: block;
+    float: none;
+    clear: both;
+}
+
+.footer-main{padding-top: 100px; padding-bottom: 50px; line-height: 25px; overflow: hidden; clear: both; color: #4a5667;}
+.footer-main h2{color: #4a5667; padding-bottom: 10px;  font-size: 16px;  text-transform: uppercase; }
+.footer-main li a{color: #4a5667; }
+.footer-main li a:hover{color: #000000; }
+.footer-main li{padding-bottom: 10px;}
+
+
+/* START - CMS page CSS */
+.cms-main-title{ text-align:center; padding-bottom:20px;}
+.cms-main-title h1{color:#2e2b33; text-transform:uppercase; font-weight: normal; font-size: 32px; padding-bottom: 10px; font-family:'BaskervilleClassico-Italic'; text-transform: capitalize;  letter-spacing:2px; }	
+.cms-arrow-left{width:0; height:0; border-top:40px solid transparent; border-bottom:40px solid transparent; border-right: 40px solid white; position:absolute; top:40%; right:0px; }
+.cms-arrow-right{width:0; height:0; border-bottom:40px solid transparent; border-top:40px solid transparent; border-left: 40px solid white; position:absolute; top:40%; left:0px; }
+.sourcing-cms .col-sm-6{padding:0px;}
+.sourcing-cms .row{margin:0px;}
+.sourcing-content-border{border: solid 1px #eeece9; padding:0px;}
+.shop-producer-button-black{position: absolute; padding: 10px; width: 250px; margin: auto; color: #fff; top: 0px; left:0px; right: 0px; bottom: 0px; height: 40px;  text-transform: uppercase; border: solid 1px #fff; font-weight: bold; text-align: center; line-height: 20px; }
+.shop-producer-button-brown{position: absolute; padding: 10px; width: 250px; margin: auto; color: #fff; top: 0px; left:0px; right: 0px; bottom: 0px; height: 40px;  text-transform: uppercase; border: solid 1px #fff; font-weight: bold; text-align: center; line-height: 20px; }
+.shop-producer-button-black:hover, .shop-producer-button-brown:hover{color:#efeff0;}
+.sourcing-cms-title-brown{color: #4c1715;}
+.sourcing-cms-content-padding{padding:2rem; padding-bottom: 0px; min-height:343px; }
+.sourcing-cms h4{text-transform:uppercase; border-bottom:solid 2px #14253d; margin-bottom:10px; padding-bottom:10px;  width:auto; display:inline-block;}
+.sourcing-cms-title-brown{border-bottom: solid 2px #4c1715;}
+.sourcing-cms{text-align: center;}
+.sourcing-cms p{text-align: left;}
+.sourcecontent-meet-team{ margin-top: 40px;}
+.sourcecontent-meet-team h4{text-align: left;}
+.sourcecontent-meet-team .cms-main-subtitle{text-align: center; margin-bottom: 20px; }
+.sourcecontent-what-our-clientsays{text-align:center; margin-top: 40px; }
+.sourcecontent-what-our-clientsays{margin-bottom: 20px; }
+.sourcecontent-what-our-clientsays .col-sm-6{ padding: 10px; }
+.moreclientplussignouter{text-align: center; border-bottom: solid 1px #000000; width: 100%; margin-bottom: 20px; }
+.moreclientplussignouter span{font-size: 40px; width: 40px;  overflow: hidden;  height: 40px; border: solid 1px #000; border-radius: 50%; display: inherit; line-height:42px; margin: auto; margin-bottom: -20px; background: #fff; cursor:pointer; }
+.moreclientplussignouterv1{text-align: center; overflow: hidden; width: 100%; }
+span.moreclientplussign.collapsed:before{content: "-";}
+.sourcingmoretext{ color: #a69042; font-weight: bold; margin-top:10px; display:block; }
+.our-team-cms .row {margin-bottom: 15px;}
+.info-detail-content-text{line-height: 1.6; padding-top: $sc-padding-lv4; }
+.fine-wine-storecms .product-details-information-content-tabs li{margin-bottom: -3px;}
+.fine-wine-storecms .product-details-information-tab-title.active a{background:#14253d;}
+.fine-wine-storecms .product-details-information-content-tabs li a{background:#e1dfdd; color: #14253d; }
+.fine-wine-storecms h3{padding-bottom: $sc-padding-lv2;}
+
+.fine-wine-storecms .product-details-information-content-tabs{border-bottom: solid 1px #868f9c; overflow: hidden; }
+.cms-main-title-purchase{text-align: center; padding-bottom: 20px;
+    background: #fff;  display: inline-grid; width: 100%; padding-top: 20px;}
+.cms-page-top-banner{margin-bottom: -83px;}
+.cms-page-top-banner img{width: 100%; height:auto;}
+.purchase-guarantees .info-detail-content-text{max-width:900px; margin:auto;}
+.sourcing-content-border img{display: block;}
+.region-map-main{max-width: 790px; position: relative; margin: auto; }
+.region-map-plus{ cursor: pointer; width: 15px; height: 15px; position: absolute; background: #000; background: url(../img/region-plus.png) no-repeat; }
+.regionmapcaption{ background:#13243d;  white-space:nowrap; padding: 6px; display: none; position:absolute; width: auto; color: #fff; right:0px;  margin-right: 25px; top: -10px; height: 36px; line-height: 27px; font-size: 13px; text-transform: uppercase; }
+.regionmapcaptionarro{width: 20px;  border-top: 18px solid transparent; border-bottom: 18px solid transparent;  border-left: 19px solid #13243d; position: absolute; right:-20px; top:0px;}
+.region-map-plus:hover > .regionmapcaption{ display:block;}
+.regionsubtitle{text-align:center; padding-bottom:10px; margin-bottom: 20px; border-bottom: solid 1px #dee0e3;}
+.regionsublinks ul{margin: 0px; padding: 0px;}
+.regionsublinks li{list-style: none; padding: 0px; }
+.regionsublinks a{ color:#000000; }
+.regionsublinks a:hover{ color:#8e1738; }
+.regionsublinks .col-sm-8 li{display: inline-block; vertical-align: top; width: 45%;}
+.regionsubtitle h2{font-family:$sc-font-family-italic; font-size:40px; font-weight:normal;}
+.regionsublinks li{/*background: url(../img/region-heart-n.jpg) no-repeat 5px; */  padding-left: 0px;   line-height: 35px;}
+.regionsublinks li:hover{/*background: url(../img/region-heart-o.jpg) no-repeat 5px; */  padding-left:0px;   line-height: 35px;}
+
+.region-previous{text-align: left; float:left;  padding-top: 20px; color: #a49647;  font-size: 18px; background: url(../img/region-prev.png) no-repeat top left; padding: 6px 10px 10px 30px;  }
+.region-next{text-align: right; padding-top: 20px; color: #a49647; font-size: 18px; background: url(../img/region-next.png) no-repeat top right; float:right; padding: 6px 30px 10px 0px;}
+
+
+.region-map-outer .regionbuttonhold{position: absolute; width:100%; max-width:1170px; }
+
+.cms-main-title-region{text-align: center; padding-bottom: 20px;
+    background: #fff;  display: inline-grid; width: 100%; padding-top: 20px;}
+.region-top-banner{margin-bottom: -83px;}
+.our-team-cms h3:after {border-bottom: solid 2px #98813d;  padding-bottom: 10px; margin-bottom: 10px; width: 140px; height: 10px;
+    content:"";  display: block;}	
+.aboutus-topbanner img{ width: 100%; height: auto;}
+.aboutus-topbanner{position: relative; margin-bottom: 20px; margin-top: -15px; }
+.aboutus-topbanner .cms-main-title {position: absolute; top: 32%; display: block; text-align: center;  margin:auto;  max-width:900px; width: 100%;  left: 0px;  right: 0px;}
+.aboutus-topbanner .cms-main-title{text-transform:uppercase; font-style:italic;}
+.aboutus-bannner-top-white{position:absolute; height: 35px; background: #fff; bottom: 0px; width: 100%; max-width:1170px; left:0px; right:0px; margin:auto; }
+.aboutus-topbanner h1{ font-size: 40px;}
+.row.ourteam-top-article{margin-bottom:40px;}
+.ourteam-top-article .col-sm-2{width:20%;}
+.ourteam-top-article .col-sm-10{width:79%;}
+
+.cms-main-title-text{text-align: center;}
+.cms-main-title-text h3{color:#8c8d95; font-size: 15px; padding-bottom: 15px; text-transform: uppercase;}
+.cms-title-border{text-align: left !important;}
+.cms-title-border:after {border-bottom: solid 2px #98813d;  padding-bottom: 10px; margin-bottom: 10px; width: 140px; height: 10px;
+    content:"";  display: block;}
+.cms-title-border span{font-size: 16px; display: block; padding-top: 5px;}
+.cms-main-subtitle{font-family:'BaskervilleClassico-Italic', serif; overflow: hidden; text-align: center;
+    clear: both; font-style: italic;   padding-bottom: 10px;  font-weight: normal; color: #14253d;background: url(../img/bg-home-line.jpg) repeat-x 0px 6px;}
+.cms-main-subtitle h3{font-size: 30px; font-weight: normal; text-transform: none; }
+.cms-main-subtitle span{background: #fff;   padding:0px 20px;}
+.cms-main-title-text h4{border-bottom: 0px; margin-bottom: 20px; line-height: 30px; text-transform: capitalize; }
+
+.napa-gallery {margin-top: 40px;}
+.napa-gallery img{width:100%;}
+.info-detail-content-text .col-sm-2{text-align: center;}
+.napa-gallery h2{font-size: 20px; padding-bottom: 10px;}
+.info-detail-content-text .col-sm-6, .info-detail-content-text .col-sm-12{padding-bottom: 20px;}
+.fine-wine-safty {max-width:600px; margin:auto; overflow: hidden; clear: both; float:none;}
+.cms-content-contact > .row {max-width: 700px; margin: auto;}
+.cms-content-contact h4 {padding-bottom: 10px; font-size: 13px;}
+.cms-content-contact input,.cms-content-contact select{border: solid 1px #dcd8d8;}
+.cms-content-contact input:focus,.cms-content-contact input:textarea{border: solid 1px #9e8949;}
+.cms-content-contact textarea{width: 100%; height: 100px; margin-bottom: 10px; border: solid 1px #dcd8d8; }
+.cms-content-contact input[type="button"]{color: white; font-weight:400; background:#93251c;  border:1px solid #93251c; border-radius: 6px; padding:10px 20px;  text-transform:capitalize;  margin:auto;  margin-top:10px;}
+.cms-main-title-white h1{color:#fff !important;}
+.private-client-main{max-width: 900px;}
+.private-client-main .col-sm-6 {margin-bottom: 30px;}
+.aboutus-our-mission-main .col-sm-6 {margin-bottom:20px; position:relative; min-height:350px;}
+.aboutus-our-mission-main .content-align-middle {position: absolute;  top: 27%;}
+.align-center{text-align:center; }
+.cms-main-subtitle-v2 h4{color:#9e9e9e !important; line-height: 30px; }
+.cms-main-subtitle-v2{text-align: center; padding-bottom: 20px; }
+.cms-main-title h1 {text-transform: uppercase; font-family:'BaskervilleClassico-Italic'}
+.private-client .align-center h5{padding: 20px 0px; font-size: 20px;}
+.private-client .cms-main-title h1{color: #fff;}
+.ourmission-bottom-content-title{text-align: center; padding: 20px 0px;}
+.ourmission-bottom-content {text-align: justify;}
+.content-align-middle h3 {font-size: 24px; padding-bottom: 10px;}
+.clear{clear: both;}
+.Privateclient-button{text-align: center; margin: 40px 0px; }
+.Privateclient-button a{background:#98813d; color: #fff; padding:15px 40px; font-weight:bold; border-radius:5px;}
+.Privateclient-button a:hover{ color: #fff;}
+.private-event .napa-gallery{margin-top: 20px; margin-bottom: 40px;}
+.cellar-management-button{text-align: center; margin: 20px 0px;}
+.content-align-middle h3 {line-height: 30px;}
+.inspectionguide-tab .product-details-information-tab-content-panel{max-height:2000px!important;  }
+.inspectionguide-tab .row{border-bottom: solid 1px #e8eaeb; padding: 10px 0px; }
+.inspectionguide-tab .row h3{padding-bottom: 0px;}
+.inspection-guide-note {max-width:600px;  margin:auto;  color:#b0b0b0;  font-size:12px;}
+.tab-title-mobile-show{display: none;margin-bottom: 10px; padding-bottom:10px; border-bottom: solid 1px #e0e0de; }
+
+.varietal-category{max-width:1170px; margin:auto;}
+ul.varietal-directory-column{padding: 20px 30px 20px 50px;  vertical-align: top; }
+ul.varietal-directory-column li{padding: 10px 10px 10px 0px; display:inline-block; width:24%;  vertical-align: top; }
+ul.varietal-directory-column li:hover{}
+ul.varietal-directory-column li a{color: #000;}
+.varietal-directory-column-links {overflow: hidden; border-top: solid 1px #dfe1e5; padding-bottom: 20px; margin-bottom: 20px;}
+.varietal-directory-main{display:inline-block; background:#fff; text-align:center; width: 100%;  padding: 20px 0px 30px 0px; }
+.varietal-directory-main h1{color: #4c1715;  font-weight: normal;  font-size: 32px;  padding-bottom: 10px;   font-family: $sc-font-family-italic;  text-transform: uppercase;  letter-spacing: 2px; text-align:center;}
+.varietal-directory{overflow: hidden; clear: both; max-width: 1170px; margin:auto;  padding: 0px 10px;}	
+.varietal-directory-main h1{padding: 30px 0px;}
+
+.header-message .cookie-warning-banner-view{background-color: rgba(0, 0, 0, 0.52) !important;text-align: center; position: fixed; z-index: 9999; width: 100%; height: 100%; padding: 0px !important; margin: 0px !important; left: 0px; border-radius: 0px !important;}
+.cookie-warning-inner {width:360px;   top: 0%; bottom: 0px; position: absolute; height: 260px; margin: auto; left: 0px;  right: 0px; background: #fff; box-shadow: 0px 0px 1px #000000; padding:20px!important;}
+.cookiemessagetext{text-align: left; padding: 15px 10px!important;  color: darkgray!important; font-style: italic;}
+.cookiemessagetext p{font-size:16px !important; color: darkgray; }
+.cookiemessageimage {padding-top:10px; padding-right: 0px!important; margin: 0px;}
+.cookie-popup-confirm{  padding-right: 0px!important;}
+.cookie-warning-banner-view-close-button{display:none;}
+.cookiemessageimage h3{    color: #98813d;  font-size: 22px;}
+.cms-content-CMS_MERCHZONE .merchandise_shop_title{height: 50px; padding-top: 5px;}
+.cms-content-CMS_MERCHZONE .merchandise_shop_title a{text-decoration:none;}
+.cms-content-CMS_MERCHZONE .product-details-full-main-left-num{font-size:12px;}
+.cms-content-CMS_MERCHZONE .add-to-cart { padding-bottom: 10px; font-weight: bold;}
+.cms-content-CMS_MERCHZONE .product-details-full-main-left-num span {width: 25px; height: 25px; background: #a48d3d; color: #fff; padding: 5px 3px;   font-size: 10px; border-radius: 100%;  text-align: center; display: inline-block;line-height: 13px;}
+.facets-facet-browse-cms-page-content-products .cms-content-CMS_MERCHZONE .item-cell{border: solid 1px #dadddf; padding: 3px; min-height: 290px;}
+.cms-content-CMS_MERCHZONE .facets-item-cell-grid-source-tag{left:15px !important;   top: 30%; }
+.cms-content-CMS_MERCHZONE .thumbnail {display: block;background: #f0f4f7; padding: 0px;}
+.cms-content-CMS_MERCHZONE .col-sm-3 {margin-right: 2px;}
+.shop-merchandise .cms-content-CMS_MERCHZONE .col-sm-3{margin-right: 17px; padding: 0}
+.shopping-layout-breadcrumb{display:none;}
+
+.facets-category-giftshop-cell-thumbnail img{max-height: 300px;}
+.sourcecontent-meet-team .row {padding-bottom: 20px;}
+.informationtabs .product-details-information-tab-content-panel{max-height: 100%!important;}
+.cellular-service .sourcecontent-what-our-clientsays{line-height: 1.6; color: #4d5256;}
+.myaccount-layout-breadcrumb{display:none !important; }
+#cms-landing-page{overflow: visible!important;}
+
+
+
+@media (max-width: $screen-sm-max){
+.aboutus-topbanner h1{ font-size: 30px;}
+.aboutus-bannner-top-white{display: none;}
+ul.varietal-directory-column li{ width:48%;  vertical-align: top; }
+.region-map-outer .regionbuttonhold{position: static; margin:auto;}
+.aboutus-our-mission-main .col-sm-6 {min-height:200px;}
+}
+
+@media (max-width: $screen-xs-max){
+.cms-page-top-banner{margin-bottom: 0px;}
+.region-top-banner{margin-bottom:0px;}
+.fine-wine-storecms .product-details-information-content-tabs{display: none;}
+.aboutus-topbanner h1{ font-size: 20px;}
+.ourteam-top-article .col-sm-2{width:100%;}
+.ourteam-top-article .col-sm-10{width:100%;}
+.ourteammain img{margin-bottom: 15px;}
+.aboutus-topbanner{ margin-bottom: 20px;}
+.aboutus-our-mission-main .col-sm-6 {margin-bottom:20px; position:relative; min-height:50px;}
+.aboutus-our-mission-main .content-align-middle {position:static; top:0;}
+.tab-content-mobile-hide{display: none;}
+.tab-title-mobile-show{display: block; }
+ul.varietal-directory-column li{ width:95%;  vertical-align: top; }
+ul.varietal-directory-column{padding:15px; }
+.facets-browse-category-heading-main-imagev1{margin-bottom: 0px;}
+.varietal-directory-main h1{padding: 10px 0px;}
+.varietal-directory-main{padding:0px;}
+.region-map-outer .regionbuttonhold{position: static; width:100%; max-width:1170px; margin:auto; padding-top:20px; }
+.region-next{float: right;}
+.cookie-warning-inner{width:100%; margin: auto;}
+.regionsublinks .col-sm-8 li{width:100%;}
+}
+

@@ -1,0 +1,3 @@
+define('footer_simplified.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var template = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return " <div data-view=\"Global.BackToTop\"></div><div class=\"footer-content\"><div id=\"banner-footer\" class=\"content-banner banner-footer\" data-cms-area=\"global_banner_footer\" data-cms-area-filters=\"global\"></div></div>  ";
+},"useData":true}); template.Name = 'footer_simplified'; return template;});

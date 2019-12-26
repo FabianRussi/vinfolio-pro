@@ -1,0 +1,232 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+	@extend .container;
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+	float: right;
+}
+.header-menu-secondary-nav{font-size:14px;}
+.header-menu-search-link {
+	font-size: $sc-font-size-xl;
+	background: none;
+	padding: $sc-padding-lv2;
+	color: $sc-color-secondary;
+	cursor: pointer;
+	position: relative;
+	line-height: 34px;
+}
+.header-menu-search-link:hover {
+	color: $sc-color-theme-400;
+}
+.header-menu-search-link.active {
+	color: $sc-color-copy;
+}
+
+.header-menu-search-icon {
+	@extend .fa;
+	@extend %fa-search;
+	font-size: $sc-font-size-xxl;
+}
+
+.header-menu-searchmobile-link {
+	margin-right: 0px;
+	cursor: pointer;
+	background-color:$sc-neutral-shade-0;
+	@media (min-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.header-menu-searchmobile-link:hover {
+	background-color:$sc-neutral-shade-0;
+}
+
+.header-menu-searchmobile-link.active {
+	background: $sc-color-theme-background;
+}
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+	margin-left: - $sc-padding-lv2;
+}
+
+.header-menu-level1 > li {
+	float: left;
+}
+.header-menu-level1 {
+  display: flex;
+}
+
+.header-menu-level1>li:nth-child(4) {
+  order: 1;
+}
+.header-menu-level1>li:nth-child(4)>a {
+   color:#8f1838
+}
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	height: $sc-secondary-menu-height;
+	line-height: $sc-secondary-menu-height;
+	padding: 0 $sc-padding-lv3;
+	color:$sc-nav-color;
+    font-weight:$sc-font-weight-semibold;
+    text-transform: capitalize;
+	font-size: 16px;
+}
+
+.header-menu-level1-anchor:hover,.header-menu-level1-anchor:focus{
+	color: $sc-nav-color;
+	border-bottom:solid 4px $sc-color-primary;
+}
+
+.open .header-menu-level1-anchor{
+	color: $sc-nav-color;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+	@extend .header-menu-level1-anchor;
+	color:$sc-nav-color;
+}
+
+//maxi menu level 2
+.header-menu-back {
+	display: none;
+}
+
+.header-menu-level2 > li {
+	//float: left;
+	//width: 20%;
+	padding-right: $sc-padding-lv6;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+
+.header-menu-secondary-nav #header-producers-top-menu li{
+	-webkit-column-break-inside: auto;
+	-moz-column-break-inside: auto;
+	page-break-inside: auto;
+	break-inside: auto;
+}
+
+
+.header-menu-level2-anchor {
+	text-transform: uppercase;
+	font-weight: $sc-font-weight-semibold;
+	color: $sc-nav-color;
+	//padding-bottom: $sc-padding-lv1;
+	//margin-bottom: $sc-margin-lv2;
+	//border-bottom: 1px solid $sc-color-theme-border-light;
+	display: block;
+	line-height: 30px;
+    font-size: 13px;
+
+	//@media (min-width: $screen-md-min) {
+	//	pointer-events: none;
+	//}
+}
+.header-menu-level2-anchor:hover {
+	color: $sc-color-copy;
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+	display: block;
+	padding: $sc-padding-lv1 0;
+	color:$sc-color-secondary;
+	   font-size: 13px;
+}
+
+.header-menu-myaccount-anchor-level3:hover {
+	color: $sc-color-link-hover;
+}
+
+.header-menu-myaccount-anchor-level3.active {
+	color: $sc-color-copy;
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+	display: none;
+}
+
+.header-menu-level-container {
+	background-color: $sc-neutral-shade-0;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 150px;
+	z-index: 1003;
+	padding: $sc-padding-lv5 0;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	border-top: 1px solid $sc-color-theme-border-light;
+	@include box-shadow(0 6px 12px transparentize($sc-neutral-shade-600, 1-0.175));
+
+	> li {
+		@extend .container;
+	}
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+	display: block;
+}
+.open .header-menu-level1-anchor:before{
+	position: absolute;
+	top: 47px;
+	left: 50%;
+	margin-left: -7.5px;
+	display: inline-block;
+	content: '';
+	border-bottom:solid 4px $sc-color-primary;
+}
+.open .header-menu-level1-anchor:after{
+	position: absolute;
+	top: 48px;
+	left: 50%;
+	margin-left: -6.5px;
+	display: inline-block;
+border-bottom:solid 4px $sc-color-primary;
+	content: '';
+	z-index: 9999;
+}
+.header-menu-level3 li{padding-left: 10px; margin-left: -10px; }
+.header-menu-level3 li:hover{ background:$sc-color-light-blue-background; color: #000; }
+.header-menu-level3 li a:hover{color: #000;}
+.header-menu-level2{column-count: 5; column-gap: 16px;-webkit-column-count: 5;
+-webkit-column-gap: 16px;-moz-column-count: 5;-moz-column-gap: 16px;padding: 0px; vertical-align: top;  display: inline-block;}
+.header-menu-level3 a{columns: auto; white-space: normal; word-wrap: normal; display: inline-block; vertical-align: top;}
+.header-menu-hide-in-navigation{display: none !important;}
+.open .header-menu-level1-anchor{border-bottom:solid 4px $sc-color-primary;} 
+.header-menu-level1-anchor{font-size: 16px; letter-spacing:0.32px;  text-transform:uppercase;  color:#14253D;  }
+.header-menu-level2{width: 100%;}
+.aboutmenu .header-menu-level2{column-count: 4;width: auto;text-align: left;}
+.aboutmenu > .header-menu-level-container > li{text-align:center}
+.knowledgemenu .header-menu-level2{column-count: 3; -webkit-column-count: 3; -moz-column-count: 3;  width: auto;text-align: left; }
+.knowledgemenu > .header-menu-level-container > li{text-align:center}
+.site-search-button-submit{display:none;}
+
+.header-site-search .site-search-input-icon{font-size:0px; height:22px; width:22px; background:url(../img/search_Icon.svg) no-repeat;  background-size: 22px; }
+
+.site-search-content-input .itemssearcher-input{text-align: center;}
+.site-search-content-input .itemssearcher-input:focus{text-align: left;}

@@ -1,0 +1,53 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.facets-browse-category-heading-list-header
+{
+	display: table;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.facets-browse-category-heading-main-description
+{
+	width: auto;
+	margin: $sc-margin-lv2;
+
+	@media (min-width: $screen-md-min)
+	{
+		margin-left: $sc-margin-lv4;
+	}
+
+}
+
+.facets-browse-category-heading-main-description h3
+{
+	text-transform: none;
+	font-weight: normal;
+}
+
+.facets-browse-category-heading-main-image
+{
+	display: block;
+
+	@media (min-width: $screen-md-min)
+	{
+		display: inherit;
+	}
+}
+
+.facets-browse-category-heading-main-image img{width: 100%;}
+.facets-browse-category-heading-producers-list-header h1{ text-align: center; }
+.facet-top-text{height:100px; overflow:hidden; }
+.facet-top-text-auto{height:auto!important; overflow:hidden; }
+.commerce-category-desc{line-height: 30px;
+    color: #3c3941;
+    text-align: justify;}
+
+ .commerce-category-desc #xyz-999 .morecontent span {
+	display: none;
+}   

@@ -1,0 +1,5 @@
+define('requestquote_wizard_module_items_line_actions.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var template = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return " <div class=\"requestquote-wizard-module-items-line-actions\"><a class=\"requestquote-wizard-module-items-line-actions-button-remove\" data-action=\"remove\"> "
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Remove",{"name":"translate","hash":{},"data":data}))
+    + " </a></div>  ";
+},"useData":true}); template.Name = 'requestquote_wizard_module_items_line_actions'; return template;});

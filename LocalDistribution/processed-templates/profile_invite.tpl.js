@@ -1,0 +1,3 @@
+define('profile_invite.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var template = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div id=\"talkable-offer\"></div><script> window._talkableq.push(['register_affiliate', {}]); </script>";
+},"useData":true}); template.Name = 'profile_invite'; return template;});
